@@ -1,0 +1,63 @@
+// variables
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap");
+
+:root {
+  // colors
+  --white: #eee;
+  --black: #333;
+  --primary-color: #0fa;
+  --accent-color: #f70;
+
+  // fonts
+  --primary-font: "Montserrat", sans-serif;
+  --h1-size: 5rem;
+  --h2-size: 4rem;
+  --h3-size: 3rem;
+  --h4-size: 2rem;
+
+  // spacing
+  --gap: 1rem;
+}
+
+body {
+  font-family: var(--primary-font);
+  color: var(--white);
+  background-color: var(--black);
+  -webkit-appearance: none;
+  font-size: 1rem;
+  position: relative;
+}
+
+::selection {
+  background: var(--accent-color); /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: var(--accent-color); /* Gecko Browsers */
+}
+
+a,
+a:visited {
+  color: var(--white);
+  text-decoration: underline;
+}
+
+button,
+input[type="submit"] {
+  background: transparent;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+  padding: var(--gap);
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  padding: calc(var(--gap) / 2);
+  font-size: 1rem;
+}
+
+.main {
+  min-height: calc(100vh - calc(var(--gap) * 3) - calc(var(--gap) * 20));
+}

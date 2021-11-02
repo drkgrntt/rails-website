@@ -1,0 +1,11 @@
+.footer {
+  background-color: var(--accent-color);
+  height: calc(var(--gap) * 3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__link {
+    // font-size: var(--h1-size);
+  }
+}

@@ -1,0 +1,11 @@
+.header {
+  background-color: var(--primary-color);
+  height: calc(var(--gap) * 20);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__heading {
+    font-size: var(--h1-size);
+  }
+}
