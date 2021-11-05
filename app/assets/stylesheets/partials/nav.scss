@@ -1,3 +1,14 @@
 .nav {
   position: absolute;
+  z-index: 10;
+  margin: var(--gap) 0;
+
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  &__list {
+    display: flex;
+    gap: var(--gap);
+  }
 }

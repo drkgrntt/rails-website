@@ -5,6 +5,13 @@
   justify-content: center;
   align-items: center;
 
+  & > *::selection {
+    background: var(--primary-color); /* WebKit/Blink Browsers */
+  }
+  & > *::-moz-selection {
+    background: var(--primary-color); /* Gecko Browsers */
+  }
+
   &__link {
     // font-size: var(--h1-size);
   }
